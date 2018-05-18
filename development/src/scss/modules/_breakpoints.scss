@@ -1,0 +1,38 @@
+/* ******************* */
+/*    DESKTOP LARGE    */
+/* ******************* */
+@media screen and (min-width: 1320px) {
+  .centralizer{ max-width:1300px; max-width:130rem; margin:0 auto; }
+
+}
+
+/* ******************* */
+/*        DESKTOP      */
+/* ******************* */
+@media screen and (min-width: 1024px) and (max-width: 1319px) {
+  .centralizer{ width:98%; max-width:1280px; max-width:128rem; margin:0 auto; }
+
+}
+
+
+/* ******************* */
+/*       TABLET        */
+/* ******************* */
+@media only screen and (min-width: 641px) and (max-width: 860px) {
+  .centralizer{ width:98%; margin: 0 auto; }
+}
+
+/* ******************* */
+/*       TABLET        */
+/* ******************* */
+@media only screen and (min-width: 860px) and (max-width: 1023px) {
+  .centralizer{ width:98%; margin: 0 auto; }
+
+}
+
+/* ******************* */
+/*       CELULAR       */
+/* ******************* */
+@media only screen and (max-width: 640px) {
+  .centralizer{ width: 98%; margin: 0 auto; }
+}

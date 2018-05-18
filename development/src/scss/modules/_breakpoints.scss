@@ -20,6 +20,13 @@
 /* ******************* */
 @media only screen and (min-width: 641px) and (max-width: 860px) {
   .centralizer{ width:98%; margin: 0 auto; }
+  .top-titles { font-size: 2rem;top:20%; margin-left: 3rem;}
+  .top-titles-first { width: 25rem;}
+
+  .industrial-content { width: 50rem; padding: 0 2rem;}
+
+  .advances-content-img { width: 35rem;}
+
 }
 
 /* ******************* */
@@ -35,4 +42,16 @@
 /* ******************* */
 @media only screen and (max-width: 640px) {
   .centralizer{ width: 98%; margin: 0 auto; }
+  .top-titles { font-size: 1.2rem;top:30%; margin-left: 1rem;}
+  .top-titles-first { width: 15rem;}
+
+  .industrial-content { width: 40rem; padding: 0 2rem;}
+  .industrial-content-text { font-size:1rem }
+  .industrial-content-title { font-size: 1rem;}
+
+  .advances-content { padding-top: 10rem;}
+  .advances-content-img { width: 25rem;}
+  .advances-content-text p { font-size: 1rem; line-height: 1rem }
+  .advances-content-text h2 { font-size: 1rem }
+
 }

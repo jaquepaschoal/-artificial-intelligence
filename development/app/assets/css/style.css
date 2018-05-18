@@ -4,7 +4,12 @@
   text-rendering: optimizeLegibility; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  height: 100%; }
+
+body {
+  background-color: #618abc;
+  height: 100%; }
 
 body, html {
   min-height: 100vh; }
@@ -375,8 +380,98 @@ textarea {
   font: inherit;
   /* 2 */ }
 
-.nav ul {
-  list-style: none; }
+.industrial {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.industrial-content {
+  position: relative;
+  margin-top: -20rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: #3f444a;
+  width: 70rem;
+  box-shadow: 1px 2px 15px 1px rgba(0, 0, 0, 0.41); }
+
+.industrial-content-title {
+  font-size: 2rem;
+  margin-top: 6rem; }
+
+.industrial-content-text {
+  color: white;
+  font-size: 1.5rem;
+  max-width: 70%;
+  text-align: center;
+  margin-bottom: 0; }
+
+.industrial-content-img img {
+  width: 100%;
+  height: 100%; }
+
+.top {
+  padding: 0;
+  background-image: url("../img/bg-top.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 60rem;
+  position: relative; }
+
+.top-titles {
+  font-size: 2.5rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  position: absolute;
+  top: 20%;
+  margin-left: 5rem; }
+
+.top-titles-first {
+  width: 30rem; }
+
+.top-titles-second {
+  margin-left: 9rem; }
+
+.advances-content {
+  background-image: url("../img/bg-advances.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 15rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.advances-content-img img {
+  height: auto;
+  width: 100%; }
+
+.advances-content-img {
+  margin-bottom: 9rem; }
+
+.advances-content-text {
+  width: 25%; }
+
+.advances-content-text h2 {
+  text-align: left;
+  font-size: 2rem; }
+
+.advances-content-text p {
+  font-size: 1.5rem;
+  color: white;
+  line-height: 2rem; }
 
 ::-moz-selection {
   background: #333;
@@ -398,21 +493,93 @@ textarea {
   color: #fff;
   text-shadow: none; }
 
+.title {
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold; }
+  .title.white {
+    color: #3f444a;
+    background-color: white; }
+  .title.dark {
+    color: white;
+    background-color: #3f444a; }
+
 /* ******************* */
 /*    DESKTOP LARGE    */
 /* ******************* */
+@media screen and (min-width: 1320px) {
+  .centralizer {
+    max-width: 1300px;
+    max-width: 130rem;
+    margin: 0 auto; } }
+
 /* ******************* */
 /*        DESKTOP      */
 /* ******************* */
+@media screen and (min-width: 1024px) and (max-width: 1319px) {
+  .centralizer {
+    width: 98%;
+    max-width: 1280px;
+    max-width: 128rem;
+    margin: 0 auto; } }
+
 /* ******************* */
 /*       TABLET        */
 /* ******************* */
+@media only screen and (min-width: 641px) and (max-width: 860px) {
+  .centralizer {
+    width: 98%;
+    margin: 0 auto; }
+  .top-titles {
+    font-size: 2rem;
+    top: 20%;
+    margin-left: 3rem; }
+  .top-titles-first {
+    width: 25rem; }
+  .industrial-content {
+    width: 50rem;
+    padding: 0 2rem; }
+  .advances-content-img {
+    width: 35rem; } }
+
 /* ******************* */
 /*       TABLET        */
 /* ******************* */
+@media only screen and (min-width: 860px) and (max-width: 1023px) {
+  .centralizer {
+    width: 98%;
+    margin: 0 auto; } }
+
 /* ******************* */
 /*       CELULAR       */
 /* ******************* */
+@media only screen and (max-width: 640px) {
+  .centralizer {
+    width: 98%;
+    margin: 0 auto; }
+  .top-titles {
+    font-size: 1.2rem;
+    top: 30%;
+    margin-left: 1rem; }
+  .top-titles-first {
+    width: 15rem; }
+  .industrial-content {
+    width: 40rem;
+    padding: 0 2rem; }
+  .industrial-content-text {
+    font-size: 1rem; }
+  .industrial-content-title {
+    font-size: 1rem; }
+  .advances-content {
+    padding-top: 10rem; }
+  .advances-content-img {
+    width: 25rem; }
+  .advances-content-text p {
+    font-size: 1rem;
+    line-height: 1rem; }
+  .advances-content-text h2 {
+    font-size: 1rem; } }
+
 @media print {
   * {
     background: transparent !important;

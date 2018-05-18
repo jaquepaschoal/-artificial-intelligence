@@ -1,0 +1,4 @@
+.title { padding: 1rem; text-align: center; font-weight: bold;
+  &.white { color:$color_primary-2 ; background-color: $color_secundary;}
+  &.dark { color:$color_secundary ; background-color: $color_primary-2;}
+}

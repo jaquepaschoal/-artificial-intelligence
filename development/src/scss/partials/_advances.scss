@@ -1,0 +1,6 @@
+.advances-content { background-image: url("../img/bg-advances.png"); background-repeat: no-repeat; background-size:cover; background-position: bottom center; display: flex; padding-top: 15rem; justify-content: space-around; align-items: center; }
+.advances-content-img img { height: auto; width: 100%; }
+.advances-content-img { margin-bottom: 9rem; }
+.advances-content-text { width: 25%; }
+.advances-content-text h2 { text-align: left; font-size: 2rem}
+.advances-content-text p { font-size: 1.5rem; color: $color-secundary; line-height: 2rem; }

@@ -12,6 +12,8 @@
 @media screen and (min-width: 1024px) and (max-width: 1319px) {
   .centralizer{ width:98%; max-width:1280px; max-width:128rem; margin:0 auto; }
 
+  .problems-content-item { width: 25%; }
+
 }
 
 
@@ -27,6 +29,11 @@
 
   .advances-content-img { width: 35rem;}
 
+  .safe-content { width: 50rem; padding: 0 2rem; }
+
+  .problems-content-item { width: 25%; }
+
+
 }
 
 /* ******************* */
@@ -34,6 +41,9 @@
 /* ******************* */
 @media only screen and (min-width: 860px) and (max-width: 1023px) {
   .centralizer{ width:98%; margin: 0 auto; }
+
+  .problems-content-item { width: 25%; }
+
 
 }
 
@@ -47,11 +57,22 @@
 
   .industrial-content { width: 40rem; padding: 0 2rem;}
   .industrial-content-text { font-size:1rem }
-  .industrial-content-title { font-size: 1rem;}
+  .industrial-content-title { font-size: 1.5rem;}
 
-  .advances-content { padding-top: 10rem;}
+  .advances-content { padding-top: 10rem; flex-direction: column;}
   .advances-content-img { width: 25rem;}
   .advances-content-text p { font-size: 1rem; line-height: 1rem }
-  .advances-content-text h2 { font-size: 1rem }
+  .advances-content-text h2 { font-size: 1.5rem }
+
+  .safe-content { width: 40rem; padding: 0 2rem; }
+  .safe-content-items { flex-direction: column;  }
+  .safe-content-title { font-size: 1.5rem}
+  .safe-content-items-text { width: 100%; margin-bottom: 6rem; font-size: 1rem;  }
+  .safe-content-items-img { width: 100%; justify-content: center; margin-bottom: 5rem; }
+
+  .problems-content { flex-direction: column; align-items: center; }
+  .problems-content-item { width: 80%; }
+  .problems-title { display: flex; justify-content: center;}
+  .problems-title h2 { margin: 0;  font-size: 1.5rem}
 
 }

@@ -33,6 +33,8 @@
 
   .problems-content-item { width: 25%; }
 
+  .suggestion-form { width: 70%;}
+
 
 }
 
@@ -44,6 +46,8 @@
 
   .problems-content-item { width: 25%; }
 
+  .suggestion-form { width: 70%;}
+
 
 }
 
@@ -53,15 +57,17 @@
 @media only screen and (max-width: 640px) {
   .centralizer{ width: 98%; margin: 0 auto; }
   .top-titles { font-size: 1.2rem;top:30%; margin-left: 1rem;}
-  .top-titles-first { width: 15rem;}
+  .top-titles-first { width: 20rem; font-size: 2.5rem}
+  .top-titles-second { font-size: 2.5rem ; margin-left: 1rem;}
 
   .industrial-content { width: 40rem; padding: 0 2rem;}
-  .industrial-content-text { font-size:1rem }
+  .industrial-content-text { font-size:1.5rem; width: 90%; }
   .industrial-content-title { font-size: 1.5rem;}
 
-  .advances-content { padding-top: 10rem; flex-direction: column;}
+  .advances-content { padding-top: 10rem; flex-direction: column; background-image: none;}
   .advances-content-img { width: 25rem;}
-  .advances-content-text p { font-size: 1rem; line-height: 1rem }
+  .advances-content-text { width: 90%;}
+  .advances-content-text p { font-size: 1.5rem; line-height: 2rem; }
   .advances-content-text h2 { font-size: 1.5rem }
 
   .safe-content { width: 40rem; padding: 0 2rem; }
@@ -71,8 +77,14 @@
   .safe-content-items-img { width: 100%; justify-content: center; margin-bottom: 5rem; }
 
   .problems-content { flex-direction: column; align-items: center; }
-  .problems-content-item { width: 80%; }
-  .problems-title { display: flex; justify-content: center;}
+  .problems-content-item { width: 80%;}
+  .problems-title { margin: 0 auto; margin-bottom: 3rem;width: 30rem}
   .problems-title h2 { margin: 0;  font-size: 1.5rem}
+
+  .suggestion-form { width: 90%;}
+  .suggestion-title { font-size: 1.5rem; width: 30rem}
+  .suggestion-text { font-size: 1.5rem;}
+  .button { font-size: 1.3rem;}
+
 
 }

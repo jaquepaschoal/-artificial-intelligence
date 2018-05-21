@@ -1,5 +1,5 @@
 .industrial { display: flex; justify-content: center;}
 .industrial-content { position:relative; margin-top: -20rem; display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: $color_primary-2; width: 70rem; box-shadow: 1px 2px 15px 1px rgba(0, 0, 0, 0.41);}
 .industrial-content-title {font-size: 2rem; margin-top: 6rem;}
-.industrial-content-text { color: $color-secundary; font-size: 1.5rem; max-width: 70%; text-align: center; margin-bottom: 0; }
+.industrial-content-text { color: $color-secundary; font-size: 1.5rem; width: 70%; text-align: center; margin-bottom: 0; }
 .industrial-content-img img { width: 100%; height: 100%;}

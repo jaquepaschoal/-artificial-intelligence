@@ -1,8 +1,7 @@
 .problems { padding-top: 10rem; background-image: url("../img/bg-problems.png"); background-repeat: no-repeat; background-size:cover; background-position: right; }
-.problems-content { display: flex; justify-content: space-around; margin-bottom: 10rem;}
+.problems-content { display: flex; justify-content: space-around;}
 .problems-title {  width:100%; ; margin-bottom: 5rem;margin-top: 7rem; display: flex  }
 .problems-content-item { margin-bottom: 6rem; border-bottom: 8px solid $color_primary; box-shadow: 1px 2px 15px 1px rgba(0, 0, 0, 0.41);padding: 2rem; width: 20%; background-color: $color-secundary; display: flex; flex-direction: column; align-items: center;}
 .problems-content-item h3 { margin-top: 3rem; font-size: 1.5rem; color: $color_primary-2; font-weight: bold;}
 .problems-content-item p { color: $color_primary-2; text-align: center; font-size: 1.3rem;}
-
 .problems-title h2 { font-size: 2rem; margin-left: 5rem}

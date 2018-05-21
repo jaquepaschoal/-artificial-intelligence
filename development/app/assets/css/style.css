@@ -408,7 +408,7 @@ textarea {
 .industrial-content-text {
   color: white;
   font-size: 1.5rem;
-  max-width: 70%;
+  width: 70%;
   text-align: center;
   margin-bottom: 0; }
 
@@ -436,10 +436,12 @@ textarea {
   margin-left: 5rem; }
 
 .top-titles-first {
-  width: 30rem; }
+  width: 30rem;
+  box-shadow: 1px 2px 15px 1px rgba(0, 0, 0, 0.41); }
 
 .top-titles-second {
-  margin-left: 9rem; }
+  margin-left: 9rem;
+  box-shadow: 1px 2px 15px 1px rgba(0, 0, 0, 0.41); }
 
 .advances-content {
   background-image: url("../img/bg-advances.png");
@@ -540,8 +542,7 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-bottom: 10rem; }
+      justify-content: space-around; }
 
 .problems-title {
   width: 100%;
@@ -578,6 +579,67 @@ textarea {
 .problems-title h2 {
   font-size: 2rem;
   margin-left: 5rem; }
+
+.suggestion {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../img/bg-form.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.suggestion-title {
+  margin: 0;
+  font-size: 2rem;
+  width: 40rem; }
+
+.suggestion-text {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 4rem; }
+
+.suggestion-form {
+  width: 60%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.suggestion-form-button {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
+
+.button {
+  outline: none;
+  width: 15rem;
+  height: 4rem;
+  cursor: pointer;
+  color: white;
+  background-color: transparent;
+  font-size: 1.5rem;
+  transition: .3s ease-out; }
+  .button:hover {
+    background-color: white;
+    color: #3f444a;
+    border: none; }
+
+.input, .textarea {
+  border-radius: 1px;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 1rem;
+  font-size: 1.5rem; }
 
 ::-moz-selection {
   background: #333;
@@ -653,7 +715,9 @@ textarea {
     width: 50rem;
     padding: 0 2rem; }
   .problems-content-item {
-    width: 25%; } }
+    width: 25%; }
+  .suggestion-form {
+    width: 70%; } }
 
 /* ******************* */
 /*       TABLET        */
@@ -663,7 +727,9 @@ textarea {
     width: 98%;
     margin: 0 auto; }
   .problems-content-item {
-    width: 25%; } }
+    width: 25%; }
+  .suggestion-form {
+    width: 70%; } }
 
 /* ******************* */
 /*       CELULAR       */
@@ -677,23 +743,31 @@ textarea {
     top: 30%;
     margin-left: 1rem; }
   .top-titles-first {
-    width: 15rem; }
+    width: 20rem;
+    font-size: 2.5rem; }
+  .top-titles-second {
+    font-size: 2.5rem;
+    margin-left: 1rem; }
   .industrial-content {
     width: 40rem;
     padding: 0 2rem; }
   .industrial-content-text {
-    font-size: 1rem; }
+    font-size: 1.5rem;
+    width: 90%; }
   .industrial-content-title {
     font-size: 1.5rem; }
   .advances-content {
     padding-top: 10rem;
     -ms-flex-direction: column;
-        flex-direction: column; }
+        flex-direction: column;
+    background-image: none; }
   .advances-content-img {
     width: 25rem; }
+  .advances-content-text {
+    width: 90%; }
   .advances-content-text p {
-    font-size: 1rem;
-    line-height: 1rem; }
+    font-size: 1.5rem;
+    line-height: 2rem; }
   .advances-content-text h2 {
     font-size: 1.5rem; }
   .safe-content {
@@ -721,13 +795,21 @@ textarea {
   .problems-content-item {
     width: 80%; }
   .problems-title {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center; }
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    width: 30rem; }
   .problems-title h2 {
     margin: 0;
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  .suggestion-form {
+    width: 90%; }
+  .suggestion-title {
+    font-size: 1.5rem;
+    width: 30rem; }
+  .suggestion-text {
+    font-size: 1.5rem; }
+  .button {
+    font-size: 1.3rem; } }
 
 @media print {
   * {

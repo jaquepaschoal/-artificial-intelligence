@@ -14,17 +14,35 @@
     var $message = document.querySelector("[data-js='message']").value;
 
     if($name === '' || $email === '' || $message === '') {
-      error();
+      error('Fill in all the fields');
+    } else {
+      insertMessage($name,$email,$message);
     }
 
-    insertMessage();
   }
 
-  function error() {
+  function insertMessage (name,email,message) {
+    var request = ajax({
+      method: 'post',
+      url: 'http://localhost:8000/api/suggestion',
+      data: {
+        name: name ,
+        email: email,
+        message: message
+      }
+    })
+
+    request.then(function (response) {
+      console.log(response);
+      //response.error.email
+    })
+  }
+
+  function error(msg) {
     clear();
     var $textArea = document.querySelector("[data-js='message']");
     var $createElement = document.createElement('p');
-    var $message = document.createTextNode('Fill in all the fields');
+    var $message = document.createTextNode(msg);
 
     $createElement.className = 'error';
     $createElement.appendChild($message);

@@ -17,32 +17,29 @@
 
     e.preventDefault();
 
-    var $name = document.querySelector("[data-js='name']").value;
     var $email = document.querySelector("[data-js='email']").value;
-    var $message = document.querySelector("[data-js='message']").value;
+    var $password = document.querySelector("[data-js='password']").value;
 
-    if($name === '' || $email === '' || $message === '') {
-      validate().message('Fill in all the fields', "[data-js='message']");
+    if($email === '' || $password === '') {
+      validate().message('Fill in all the fields', "[data-js='password']");
     } else {
-      insertMessage($name,$email,$message);
+      login($email,$password);
     }
 
   }
 
-  function insertMessage (name,email,message) {
+  function login (email,password) {
     var request = ajax({
       method: 'post',
-      url: 'http://localhost:8000/api/suggestion',
+      url: 'http://localhost:8000/api/login',
       data: {
-        name: name ,
-        email: email,
-        message: message
+        email: email ,
+        password: password
       }
     })
 
     request.then(function (response) {
       console.log(response);
-      //response.error.email
     })
   }
 

@@ -17,12 +17,16 @@
       <div>
         <img src="" alt="">
       </div>
-      <input class="input" type="text" placeholder="E-mail">
-      <input class="input" type="text" placeholder="Password">
+      <input class="input" type="text" data-js="email" placeholder="E-mail">
+      <input class="input" type="password"  data-js="password" placeholder="Password">
       <div class="login-content-form-button">
-        <button class="button"> ENVIAR </button>
+        <button class="button" data-js="btn-send"> ENVIAR </button>
       </div>
     </form>
   </div>
+
+  <script src="../assets/js/ajax.min.js"></script>
+  <script src="../assets/js/validate.js"></script>
+  <script src="../assets/js/login.js"></script>
 </body>
 </html>

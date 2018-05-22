@@ -1,4 +1,4 @@
-(function(){
+(function(validate){
 
   'use strict'
 
@@ -14,7 +14,7 @@
     var $message = document.querySelector("[data-js='message']").value;
 
     if($name === '' || $email === '' || $message === '') {
-      error('Fill in all the fields');
+      validate().message('Fill in all the fields', "[data-js='message']");
     } else {
       insertMessage($name,$email,$message);
     }
@@ -38,24 +38,5 @@
     })
   }
 
-  function error(msg) {
-    clear();
-    var $textArea = document.querySelector("[data-js='message']");
-    var $createElement = document.createElement('p');
-    var $message = document.createTextNode(msg);
 
-    $createElement.className = 'error';
-    $createElement.appendChild($message);
-
-    $textArea.insertAdjacentElement('afterend', $createElement);
-
-  }
-
-  function clear() {
-    var $error = document.querySelector('.error');
-    $error ? $error.remove() : '';
-  }
-
-
-
-})()
+})(window.validate)

@@ -115,11 +115,11 @@
           this problematic situation.
       </p>
       <form class="suggestion-form">
-        <input class="input" type="text" placeholder="Nome">
-        <input class=" input" type="text" placeholder="E-mail">
-        <textarea class="textarea" rows='8' placeholder="Your suggestion..."></textarea>
+        <input class="input" type="text" data-js="name" placeholder="Name">
+        <input class=" input" type="text" data-js="email" placeholder="E-mail">
+        <textarea class="textarea" rows='8'data-js="message" placeholder="Your suggestion..."></textarea>
         <div class="suggestion-form-button">
-          <button class="button"> ENVIAR </button>
+          <button class="button" data-js="btn-send"> ENVIAR </button>
         </div>
       </form>
 
@@ -127,8 +127,7 @@
 
 
     <script src="assets/components/jquery/jquery.min.js"></script>
-    <script src="assets/js/scripts.min.js"></script>
-
+    <script src="../assets/js/send-form.js"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
         (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

@@ -17,6 +17,8 @@
 @import 'partials/safe';
 @import 'partials/_problems.scss';
 @import 'partials/form.scss';
+@import 'partials/_login.scss';
+@import 'partials/_messages.scss';
 
 //----------------------------------*\
 // OBJECTS & MODULES
@@ -25,6 +27,8 @@
 @import 'modules/_buttons.scss';
 @import 'modules/_inputs.scss';
 @import 'modules/_misc.scss';
+@import 'modules/_normalize.scss';
+@import 'modules/_table.scss';
 @import 'modules/_titles.scss';
 
 // Enhancement modules

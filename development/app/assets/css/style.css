@@ -640,9 +640,7 @@ textarea {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  width: 100%;
-  -ms-flex-pack: end;
-      justify-content: flex-end; }
+  width: 100%; }
 
 .login-content-form-button {
   width: 100%;
@@ -651,6 +649,15 @@ textarea {
   -ms-flex-pack: end;
       justify-content: flex-end;
   margin: 1rem 0; }
+
+.login-content-form-img {
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 3rem; }
+
+.login-content-form-img img {
+  width: 100%;
+  height: auto; }
 
 .messages {
   display: -ms-flexbox;
@@ -663,10 +670,16 @@ textarea {
 .messages-title {
   width: 30rem;
   margin: 4rem;
-  box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.41); }
+  display: -ms-flexbox;
+  display: flex; }
 
 .messages-title h2 {
-  margin: 0; }
+  margin: 0;
+  box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.41);
+  margin-right: 3rem; }
+
+.logout {
+  cursor: pointer; }
 
 .table {
   width: 90%;

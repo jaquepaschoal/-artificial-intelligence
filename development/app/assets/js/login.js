@@ -21,7 +21,7 @@
     var $password = document.querySelector("[data-js='password']").value;
 
     if($email === '' || $password === '') {
-      validate().message('Fill in all the fields!', "[data-js='password']");
+      validate().message('Fill in all the fields!', "[data-js='password']",'error');
     } else {
       login($email,$password);
     }
@@ -46,7 +46,7 @@
       }
 
       if(response.error) {
-        validate().message('E-mail or password does not match.', "[data-js='password']");
+        validate().message('E-mail or password does not match.', "[data-js='password']",'error');
       }
     })
   }

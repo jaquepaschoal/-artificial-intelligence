@@ -30,14 +30,9 @@
 @import 'modules/_normalize.scss';
 @import 'modules/_table.scss';
 @import 'modules/_titles.scss';
-@import 'modules/error.scss';
+@import 'modules/_message.scss';
 
 // Enhancement modules
 @import 'modules/_breakpoints.scss';
 @import 'modules/_print.scss';
 
-//----------------------------------*\
-// VENDOR
-//----------------------------------*/
-
-@import 'vendor/_external.scss';

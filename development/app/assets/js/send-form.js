@@ -22,7 +22,7 @@
     var $message = document.querySelector("[data-js='message']").value;
 
     if($name === '' || $email === '' || $message === '') {
-      validate().message('Fill in all the fields!', "[data-js='message']");
+      validate().message('Fill in all the fields!', "[data-js='message']",'error');
     } else {
       insertMessage($name,$email,$message);
     }
@@ -42,9 +42,9 @@
 
     request.then(function (response) {
       if(response.error) {
-        validate().message('The email must be a valid email address.', "[data-js='message']");
+        validate().message('The email must be a valid email address.', "[data-js='message']",'error');
       } else {
-        console.log('inserido com sucesso');
+        validate().message('Suggestion sent successfully!', "[data-js='message']",'success');
       }
     })
   }

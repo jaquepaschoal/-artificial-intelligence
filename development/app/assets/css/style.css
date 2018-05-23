@@ -1243,6 +1243,12 @@ textarea {
   border: 1px solid red;
   padding: .5rem; }
 
+.success {
+  font-size: 1.5rem;
+  color: green;
+  border: 1px solid green;
+  padding: .5rem; }
+
 /* ******************* */
 /*    DESKTOP LARGE    */
 /* ******************* */

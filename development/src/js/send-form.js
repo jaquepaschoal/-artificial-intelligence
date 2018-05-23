@@ -14,7 +14,7 @@
     var $message = document.querySelector("[data-js='message']").value;
 
     if($name === '' || $email === '' || $message === '') {
-      validate().message('Fill in all the fields', "[data-js='message']");
+      validate().message('Fill in all the fields!', "[data-js='message']");
     } else {
       insertMessage($name,$email,$message);
     }
@@ -33,8 +33,11 @@
     })
 
     request.then(function (response) {
-      console.log(response);
-      //response.error.email
+      if(response.error) {
+        validate().message('The email must be a valid email address.', "[data-js='message']");
+      } else {
+        console.log('inserido com sucesso');
+      }
     })
   }
 

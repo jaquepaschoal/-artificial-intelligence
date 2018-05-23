@@ -1224,6 +1224,12 @@ textarea {
     color: white;
     background-color: #3f444a; }
 
+.error {
+  font-size: 1.5rem;
+  color: red;
+  border: 1px solid red;
+  padding: .5rem; }
+
 /* ******************* */
 /*    DESKTOP LARGE    */
 /* ******************* */

@@ -21,7 +21,7 @@
     var $password = document.querySelector("[data-js='password']").value;
 
     if($email === '' || $password === '') {
-      validate().message('Fill in all the fields', "[data-js='password']");
+      validate().message('Fill in all the fields!', "[data-js='password']");
     } else {
       login($email,$password);
     }
@@ -40,6 +40,14 @@
 
     request.then(function (response) {
       console.log(response);
+      if(response.success) {
+        sessionStorage.setItem('token', response.success.token);
+        window.location = 'http://localhost:3000/pages/messages.html';
+      }
+
+      if(response.error) {
+        validate().message('E-mail or password does not match.', "[data-js='password']");
+      }
     })
   }
 

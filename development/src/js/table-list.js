@@ -5,7 +5,7 @@
   function getSuggestions() {
     var request = ajax({
       method: 'get',
-      url: 'http://localhost:8000/api/suggestion',
+      url: validate().getUrl.urlApi + 'suggestion',
       headers: {
         'content-type': 'application/json',
         'Authorization': 'Bearer ' + sessionStorage.getItem('token'),

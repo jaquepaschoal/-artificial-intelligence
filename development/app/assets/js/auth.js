@@ -6,18 +6,18 @@
  * @version 1.0.5
  * Copyright 2018. MIT licensed.
  */
-(function(){
+(function(validate){
 
   'use strict'
 
   var urlBase = window.location.href;
-  var urlLogin = 'http://localhost:3000/pages/login.html';
+  var urlLogin = validate().getUrl.urlFront + 'pages/login.html';
   sessionStorage.getItem('token') == '' ? window.location = urlLogin : verifyAuthentication(urlBase);
 
   function verifyAuthentication(url) {
     var request = ajax({
       method: 'get',
-      url: 'http://localhost:8000/api/auth',
+      url: validate().getUrl.urlApi + 'auth',
       headers: {
         'content-type': 'application/json',
         'Authorization': 'Bearer ' + sessionStorage.getItem('token'),
@@ -31,4 +31,4 @@
     })
   }
 
-})()
+})(window.validate)

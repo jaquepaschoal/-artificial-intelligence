@@ -24,6 +24,11 @@
         $error ? $error.remove() : '';
         $success ? $success.remove() : '';
 
+      },
+
+      getUrl: {
+        urlApi: 'http://localhost:8000/api/',
+        urlFront: 'http://localhost:3000/'
       }
     }
   }

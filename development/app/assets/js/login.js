@@ -31,7 +31,7 @@
   function login (email,password) {
     var request = ajax({
       method: 'post',
-      url: 'http://localhost:8000/api/login',
+      url: validate().getUrl.urlApi + 'login',
       data: {
         email: email ,
         password: password

@@ -24,7 +24,7 @@
   function insertMessage (name,email,message) {
     var request = ajax({
       method: 'post',
-      url: 'http://localhost:8000/api/suggestion',
+      url: validate().getUrl.urlApi + 'suggestion',
       data: {
         name: name ,
         email: email,

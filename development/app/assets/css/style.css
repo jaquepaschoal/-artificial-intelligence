@@ -685,6 +685,11 @@ textarea {
   width: 90%;
   background-color: white; }
 
+#suggestions {
+  display: block;
+  overflow: scroll;
+  overflow-y: hidden; }
+
 .dataTable-wrapper {
   width: 90%;
   background-color: white;

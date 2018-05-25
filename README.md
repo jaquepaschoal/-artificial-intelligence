@@ -12,6 +12,8 @@ $ npm i
 $ gulp
 ```
 
+Ps. The server and front-end URL can be changed in [validate.js](https://github.com/jaquepaschoal/artificial-intelligence/blob/master/development/app/assets/js/validate.js)
+
 ### Prerequisites
 
 * [NPM](https://www.npmjs.com/get-npm) - Install here

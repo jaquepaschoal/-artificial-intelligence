@@ -1,8 +1,8 @@
 /*!
- * fastshell
- * Fiercely quick and opinionated front-ends
- * https://HosseinKarami.github.io/fastshell
- * @author Hossein Karami
+ * Artificial-Intelligence
+ * A landing page about Artificial Intelligence
+ * https://github.com/jaquepaschoal/artificial-intelligence
+ * @author Jaqueline Paschoal
  * @version 1.0.5
  * Copyright 2018. MIT licensed.
  */
